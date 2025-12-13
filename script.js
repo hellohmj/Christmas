@@ -482,7 +482,7 @@ function initGestures() {
 }
 
 /**
- * Sets up the UI event listeners, specifically the camera start button.
+ * Sets up the UI event listeners, specifically the camera start button and file upload.
  */
 function setupUI() {
     const startBtn = document.getElementById('start-camera');
@@ -495,4 +495,45 @@ function setupUI() {
             initGestures();
         });
     }
+
+    // File Upload Logic for Mobile/APK
+    const uploadBtn = document.getElementById('upload-btn');
+    const fileInput = document.getElementById('file-input');
+
+    if (uploadBtn && fileInput) {
+        uploadBtn.addEventListener('click', () => {
+            fileInput.click();
+        });
+
+        fileInput.addEventListener('change', (e) => {
+            const files = e.target.files;
+            if (files && files.length > 0) {
+                const newImages = [];
+                let loadedCount = 0;
+
+                for (let i = 0; i < files.length; i++) {
+                    const reader = new FileReader();
+                    reader.onload = (event) => {
+                        newImages.push(event.target.result); // Data URL
+                        loadedCount++;
+                        if (loadedCount === files.length) {
+                            // All loaded, rebuild tree
+                            window.imageList = newImages;
+                            rebuildTree();
+                        }
+                    };
+                    reader.readAsDataURL(files[i]);
+                }
+            }
+        });
+    }
+}
+
+function rebuildTree() {
+    // Remove old photos
+    photos.forEach(mesh => scene.remove(mesh));
+    photos = [];
+    
+    // Create new tree
+    createPhotoTree();
 }
