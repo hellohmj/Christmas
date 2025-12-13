@@ -18,3 +18,22 @@ canvas {
     font-size: 24px;
     transition: opacity 0.5s;
 }
+
+#upload-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid white;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    z-index: 20;
+    transition: background 0.3s;
+}
+
+#upload-btn:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
