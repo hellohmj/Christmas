@@ -1,7 +1,8 @@
 # 3D photo Christmas tree
 
 This is a use Three.js fabricated 3D Christmas tree display program. It automatically reads the photos in the current folder and hangs them on the virtual Christmas tree.
-< Img width = "1833" height = "1141" alt = "Capture" src = "https://github.com/user-attachments/assets/d2dd401a-3dc3-4e7f-a441-b383989be135" / >
+
+<Img width = "1833" height = "1141" alt = "Capture" src = "https://github.com/user-attachments/assets/d2dd401a-3dc3-4e7f-a441-b383989be135"/>
 
 # # How to use
 
