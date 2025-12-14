@@ -6,14 +6,14 @@ This is a use Three.js fabricated 3D Christmas tree display program. It automati
 
 # # How to use
 
-1. * * Prepare photos * *: take your photos (.jpg, .png etc.) directly in this folder.
-2. * * Run the program * *:
+1.* * Prepare photos * *: take your photos (.jpg, .png etc.) directly in this folder.
+2.* * Run the program * *:
 - Make sure you install Python.
 - Running in the terminal:
-     ```bash
-     python start.py
-     ```
-3. * * Browse * *: The program will automatically open the browser, and you will see the Christmas tree composed of your photos!
+```bash
+python start.py
+```
+3.* * Browse * *: The program will automatically open the browser, and you will see the Christmas tree composed of your photos!
 
 # # Features
 - Automatic reading of local pictures
