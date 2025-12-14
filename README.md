@@ -1,37 +1,36 @@
-# 3D 照片圣诞树
+# 3D photo Christmas tree
 
-这是一个使用 Three.js 制作的 3D 圣诞树展示程序。它会自动读取当前文件夹下的照片，并将它们挂在虚拟的圣诞树上。
-<img width="1833" height="1141" alt="捕获" src="https://github.com/user-attachments/assets/d2dd401a-3dc3-4e7f-a441-b383989be135" />
+This is a use Three.js fabricated 3D Christmas tree display program. It automatically reads the photos in the current folder and hangs them on the virtual Christmas tree.
+< Img width = "1833" height = "1141" alt = "Capture" src = "https://github.com/user-attachments/assets/d2dd401a-3dc3-4e7f-a441-b383989be135" / >
 
-## 如何使用
+# # How to use
 
-1. **准备照片**：将你的照片（.jpg, .png 等）直接放在这个文件夹中。
-2. **运行程序**：
-   - 确保你安装了 Python。
-   - 在终端中运行：
+1. * * Prepare photos * *: take your photos (.jpg, .png etc.) directly in this folder.
+2. * * Run the program * *:
+- Make sure you install Python.
+- Running in the terminal:
      ```bash
      python start.py
      ```
-3. **浏览**：程序会自动打开浏览器，你将看到由你的照片组成的圣诞树！
+3. * * Browse * *: The program will automatically open the browser, and you will see the Christmas tree composed of your photos!
 
-## 功能
-- 自动读取本地图片
-- 3D 旋转和缩放控制
-- 唯美的发光效果 (Bloom)
-- 下雪特效
-- **🎄 丰富装饰**：新增了树干、彩球装饰和闪烁的彩灯。
-- **👋 手势控制**：
-  - 点击右下角的 **"开启摄像头"** 按钮。
-  - 允许浏览器访问摄像头权限。
-  - 挥手即可控制圣诞树旋转。
-  - 手在屏幕左侧 -> 向左转
-  - 手在屏幕右侧 -> 向右转
-  - 手在中间 -> 停止/慢速旋转
+# # Features
+- Automatic reading of local pictures
+- 3D rotation and Scale Controls
+- Beautiful glow effect (Bloom)
+- Snow effect
+- * * 🎄 Rich Decorations * *: Added tree trunks, ball decorations and flashing lights.
+- * * 👋 Gesture control * *:
+- Click the * * "Enable Camera" * * button in the lower right corner.
+- Allow the browser to access camera permissions.
+- Wave your hand to control the rotation of the tree.
+- Hands on the left side of the screen - > Turn left
+- Hands on the right side of the screen - > Turn right
+- Hand in center - > stop/slow rotation
 
-## 如果没有照片
-如果没有放入照片，程序会使用彩色方块作为占位符展示效果。
+# # If there is no photo
+If no photos are placed, the program uses colored squares as placeholders to show the effect.
 
-## 注意事项
-- 手势识别需要摄像头权限，请允许浏览器访问摄像头。
-- 首次加载手势模型可能需要几秒钟。
-
+# # Precautions
+- Gesture recognition requires camera permissions. Please allow the browser to access the camera.
+- It may take several seconds to load the gesture model for the first time.
